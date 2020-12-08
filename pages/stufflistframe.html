@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		.dws {
+			position: absolute;
+			top:36%;
+ 			left: 50%;
+ 			transform: translate(-50%, -50%);
+		}   	
+		.butt{
+			border: 2px solid #115e19;
+			font-size: 20px;
+			color: #115e19;
+			text-decoration: none;
+			text-transform: uppercase;
+			width: 125px;
+			height: 30px;
+			display: block;
+			text-align: center;
+			line-height: 30px;
+			font-family: Arial, sans-serif;
+			position: relative;
+			overflow: hidden;
+		}
+		.butt::before,
+		.butt::after {
+			position: absolute;
+			content: "";
+			width: 100%;
+			height: 100%;
+			background:#115e19;
+			top: 0;
+			left: -100%;
+			opacity: .5;
+			transition: .3s;
+			z-index: -1;
+		}
+		.butt::after{
+			opacity: 1;
+			transition-delay: .1s;
+		}
+		.butt:hover{
+			color: #fff;
+		}
+		.butt:hover::before,
+		.butt:hover::after {
+			left: 0;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="dws">
+	<a href="middleframe\ringsframe.html" target="MENU" class="butt">Кольцa</a>
+	<br>
+	<a href="middleframe\earframe.html" target="MENU" class="butt">Серьги</a>
+	<br>
+	<a href="middleframe\chains.html" target="MENU" class="butt">Цепи</a>
+	<br>
+	<a href="middleframe\podveska.html" target="MENU" class="butt">Подвески</a>
+	<br>
+	<a href="#" class="butt">Браслеты</a>
+	<br>
+	<a href="#" class="butt">Часы</a>
+	<br>
+	<a href="#" class="butt">Запонки</a>
+	<br>
+	<a href="#" class="butt">Акции</a>
+	<br>
+	<a href="#" class="butt">Коллекции</a>
+	</div>
+</body>
+</html>
