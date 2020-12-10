@@ -24,7 +24,7 @@ body{
 
 .navi{
 	position: absolute;
-	bottom: 16px;
+	bottom: 5px;
 	left: 45%;
 	transform:translateX(-50%,-50%);
 	display: flex;
